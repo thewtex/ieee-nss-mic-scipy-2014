@@ -54,14 +54,89 @@ Import the Docker Image
 
 There are three options to import the Docker image.
 
-1) Import the stored image distributed with the flash drive.
-2) Pull the image from DockerHub.
-3) Build the image from its sources.
+Import the stored image distributed with the flash drive.
+  The Docker image is stored in the file `docker/image/ieee-nss-mic-scipy-2014.tar`.
+  Run the command::
+
+    docker load docker/image/ieee-nss-mic-scipy-2014.tar
+
+  On OSX or Windows, move the tar file to `/Users` or `C:\\Users\\` which is
+  mounted in the Docker VM as `/Users` or `/c/Users` so it is available to the
+  docker client.
+
+Pull the image from DockerHub_.
+  DockerHub_ is an online repository of docker images that makes it easy to
+  search, push, and pull images from public or private repositories. To
+  download the image from DockerHub::
+
+    docker pull thewtex/ieee-nss-mic-scipy-2014
+
+Build the image from its sources.
+  Docker images are created from a set of instructions that are stored in a
+  *Dockerfile*. These are the set of commands that are used to set up the
+  image, like installing packages, compiling dependencies, editing
+  configurations, etc.  To build the image::
+
+    cd docker/src/ieee-nss-mic-scipy-2014
+    ./build.sh
 
 Run the Docker Image
 ....................
 
-TODO.
+To run the IPython notebook server::
+
+  docker run -d --name notebook -p 443:8888 -v $PWD:/notebooks/:rw -e "PASSWORD=MakeAPassword" thewtex/ieee-nss-mic-scipy-2014
+
+This command should be executed from the directory containing the `*.ipynb`
+notebook files so `$PWD` will make the notebook files available to the docker
+container. Replace *MakeAPassword* with a password of your choice.
+
+Docker container port 8888, where the IPython notebook server is listening for
+connections, will be forwarded to the localhost on port 443. To connect to the
+notebook server, point your browser to *https://localhost/*.
+
+.. note::
+
+  On OSX and Windows, extra steps are required to find the address and the
+  port that the container has been forwarded to.  In a Boot2Docker shell,
+  run::
+
+    boot2docker ip
+
+  This should return an address like *192.168.59.103*.  Next, find the port
+  in the docker environment with::
+
+    docker port notebook 8888
+
+  This should return a port like *49153*.
+
+  Port your browser to the resulting address and port; for example:
+  *https://192.168.59.103:49153*.
+
+After connecting to the container, an "untrusted connection" warning from your
+browser is expected.
+
+To list the running containers::
+
+  docker ps
+
+To list the running and stopped containers::
+
+  docker ps -a
+
+To stop the container::
+
+  docker stop notebook
+
+To start the container again::
+
+  docker start notebook
+
+To remove the container::
+
+  docker rm notebook
+
 
 .. _IPython: http://ipython.org/
 .. _Docker: https://www.docker.com/
+.. _DockerHub: https://hub.docker.com/
