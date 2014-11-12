@@ -49,5 +49,19 @@ the `docker/installation` directory. Outside of the conference, the `online
 installation instructions <https://docs.docker.com/installation/>`_ can also
 be followed.
 
+Import the Docker Image
+.......................
+
+There are three options to import the Docker image.
+
+1) Import the stored image distributed with the flash drive.
+2) Pull the image from DockerHub.
+3) Build the image from its sources.
+
+Run the Docker Image
+....................
+
+TODO.
+
 .. _IPython: http://ipython.org/
 .. _Docker: https://www.docker.com/
