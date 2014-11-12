@@ -46,6 +46,7 @@ Read-only renderings of the notebooks can be found at these links:
 * `3 SciPy Stack <http://nbviewer.ipython.org/github/thewtex/ieee-nss-mic-scipy-2014/blob/master/3_SciPy_Stack.ipynb>`_
 * `4 Cython <http://nbviewer.ipython.org/github/thewtex/ieee-nss-mic-scipy-2014/blob/master/4_Cython.ipynb>`_
 * `5 XDress <http://nbviewer.ipython.org/github/thewtex/ieee-nss-mic-scipy-2014/blob/master/5_XDress.ipynb>`_
+* `6 Outro <http://nbviewer.ipython.org/github/thewtex/ieee-nss-mic-scipy-2014/blob/master/6_Outro.ipynb>`_
 
 Run the Notebooks Live, Locally
 -------------------------------
