@@ -35,8 +35,20 @@ Python practices.
 The course is delivered as series of IPython_ notebooks. The computational
 environment to run the notebooks is stored as a Docker image.
 
-Running the Notebooks
----------------------
+View the Static Notebooks, Online
+---------------------------------
+
+Read-only renderings of the notebooks can be found at these links:
+
+* `0 Introduction <http://nbviewer.ipython.org/github/thewtex/ieee-nss-mic-scipy-2014/blob/master/0_Introduction.ipynb>`_
+* `1 Docker <http://nbviewer.ipython.org/github/thewtex/ieee-nss-mic-scipy-2014/blob/master/1_Docker.ipynb>`_
+* `2 IPython <http://nbviewer.ipython.org/github/thewtex/ieee-nss-mic-scipy-2014/blob/master/2_IPython.ipynb>`_
+* `3 SciPy Stack <http://nbviewer.ipython.org/github/thewtex/ieee-nss-mic-scipy-2014/blob/master/3_SciPy_Stack.ipynb>`_
+* `4 Cython <http://nbviewer.ipython.org/github/thewtex/ieee-nss-mic-scipy-2014/blob/master/4_Cython.ipynb>`_
+* `5 XDress <http://nbviewer.ipython.org/github/thewtex/ieee-nss-mic-scipy-2014/blob/master/5_XDress.ipynb>`_
+
+Run the Notebooks Live, Locally
+-------------------------------
 
 All the software required to run the notebooks is available in the provided
 Docker_ image.
