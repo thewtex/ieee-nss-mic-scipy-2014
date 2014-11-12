@@ -32,5 +32,22 @@ By the end of the course, participants will be prepared to be more effective
 computational researchers through an introduction into modern scientific
 Python practices.
 
-The course is delivered as series of IPython notebooks. The computational
+The course is delivered as series of IPython_ notebooks. The computational
 environment to run the notebooks is stored as a Docker image.
+
+Running the Notebooks
+---------------------
+
+All the software required to run the notebooks is available in the provided
+Docker_ image.
+
+Install Docker
+..............
+
+To install Docker, follow the instructions distributed with the flash drive in
+the `docker/installation` directory. Outside of the conference, the `online
+installation instructions <https://docs.docker.com/installation/>`_ can also
+be followed.
+
+.. _IPython: http://ipython.org/
+.. _Docker: https://www.docker.com/
