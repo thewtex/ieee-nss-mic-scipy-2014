@@ -1,0 +1,6 @@
+[submodule "docker/src/ieee-nss-mic-scipy-2014"]
+	path = docker/src/ieee-nss-mic-scipy-2014
+	url = https://github.com/thewtex/docker-ieee-nss-mic-scipy-2014.git
+[submodule "docker/src/itkka"]
+	path = docker/src/itkka
+	url = https://github.com/thewtex/docker-itkka.git
