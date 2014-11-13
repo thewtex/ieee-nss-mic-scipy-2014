@@ -3,7 +3,7 @@ Modern Scientific Computing with Python
 Course at IEEE Nuclear Science Symposium and Medical Image Conference
 ---------------------------------------------------------------------
 
-:Date:   2014-11-12
+:Date:   2014-11-13
 :Author: Matt McCormick <matt.mccormick@kitware.com>
 
 Introduction
